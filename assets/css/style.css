@@ -1,7 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: #f5f1f1;
+  
   }
   
   body {
@@ -28,7 +28,7 @@ html {
   }
 
   #header {
-    margin-top:25px;
+    padding-top:50px;
     max-width: 700px;
     margin:auto;
     
@@ -97,3 +97,5 @@ html {
   img {
   width:100%;
 }
+
+

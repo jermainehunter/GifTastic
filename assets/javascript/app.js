@@ -1,6 +1,6 @@
 
 // array of our gifs
-var topics = ["Bike Fail", "Baby Fail", "Kid Fail", "Fad Fail", "Dog Fail", "Cat Fail"];
+var topics = ["Bike Fail", "Pet Fail", "Bowling Fail", "Dad Fail", "Dog Fail"];
 
 //set some global variables
 var button;
