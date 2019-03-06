@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giftastic</title>
+
+	<title>Giftastic </title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
 <body>
-    
+
+
+
+	<!--Put banner here, width 100% with responsive image, dont' forget -->
+	
+		<div id="header">
+			<img src="assets/images/giftasttic_header.png" />
+		</div>
+	
+
+	<!--Place Buttons and Input Field here -->
+
+		<div id="input-form">
+			<form>
+
+				<label for="topic-input">SEARCH FOR AN EPIC FAIL:</label>&nbsp;&nbsp;&nbsp;
+				<input type="text" placeholder="ie: football fail" id="topic-input">&nbsp;&nbsp;&nbsp;
+				<button type="submit" class="btn submit" id="button-styles" data="submitBtn">Submit</button>
+
+			</form>
+		</div>
+
+
+
+	<!--Put our dynamically generated buttons here -->
+	<div >
+		<div id="buttonArea"></div>
+	</div>
+
+	<!--Put our gifs here -->
+	
+		<div id="gifArea"></div>
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
