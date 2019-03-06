@@ -1,4 +1,4 @@
-
+//ADDED TO MY PORTFOLIO https://jermainehunter.github.io/Bootstrap-Portfolio/
 // array of our gifs
 var topics = ["Bike Fail", "Pet Fail", "Bowling Fail", "Dad Fail", "Dog Fail"];
 
@@ -12,9 +12,9 @@ var newTopic = "";
 //////////////////////////////////////////////////////////////////
 
 // function to create new buttons from the topics array
-var buttonGenerator = function (){
+var buttonCreator = function (){
 	// need to remember to empty previous buttons, touched on in class.  See class video from Friday I think...
-	 $("#buttonArea").empty();
+	 //$("#buttonArea").empty();
 	// create a for loop to loop through array and put data in buttons 
 	for(i = 0; i < topics.length; i++) {
 		button = $("<button type=" + "button" + ">" + topics[i] + "</button>").addClass("btn btn-info").attr("data",topics[i]);
@@ -60,9 +60,11 @@ $("#buttonArea").on("click", ".btn", function(){
 
 	 			// add a CSS style to create colored borders around the gifs
 	 			//var topicImage = $("<img>").addClass("blackBorder");
-								var topicImage = $("<img>");
+				  
+				 var topicImage = $("<img>");
 	 			// add states of animate and still which will be toggled 
-	 			topicImage.attr("src", results[i].images.fixed_height_still.url);
+				
+				topicImage.attr("src", results[i].images.fixed_height_still.url);
 	 			topicImage.attr("data-still", results[i].images.fixed_height_still.url);
 	 			topicImage.attr("data-animate", results[i].images.fixed_height.url)
 	 			topicImage.attr("data-state", "still")
@@ -83,8 +85,9 @@ $("#buttonArea").on("click", ".btn", function(){
 //When the user clicks the gif again, it stops playing.
 $("#gifArea").on("click", ".gif", function(event){
 	//use this to prevent page from reloading and losing data
+	
 	event.preventDefault();
-	$("#buttonArea").empty();
+
 	// gets the current state of the clicked gif 
 	var state = $(this).attr("data-state");
 	
@@ -101,7 +104,7 @@ $("#gifArea").on("click", ".gif", function(event){
 })
    
 
-// The form takes the value from the input box and adds it into the topics  array. The buttonGenerator function is called that takes each topic in the array remakes the buttons on the page.
+// The form takes the value from the input box and adds it into the topics  array. The buttonCreator function is called that takes each topic in the array remakes the buttons on the page.
 
 
 $(".submit").on("click", function(event){
@@ -114,9 +117,9 @@ $(".submit").on("click", function(event){
 	topics.push(newTopic);
 	console.log(topics);
 	// call the function that creates the new button
-	buttonGenerator();
+	buttonCreator();
 });
 
 
-buttonGenerator();
+buttonCreator();
  
